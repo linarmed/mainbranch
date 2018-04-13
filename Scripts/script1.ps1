@@ -20,6 +20,7 @@ $TypeCountMap = @{
     '21' = 5
 }
 
+$startTime = [DateTime]::Now
 
 foreach ($Number in $ToCheck)
 {
@@ -27,6 +28,12 @@ foreach ($Number in $ToCheck)
     foreach ($i in 0..($TypeCountMap[$Number] - 1))
     {
         $Wildcard = "P$Number`T$i`I*"
-        $AddressWildcard = "*@P$Number`T$i`I*"
+        $AddressWildcard += "*@P$Number`T$i`I*"
     }
 }
+
+echo ""
+$endTime = [DateTime]::Now
+echo ("Duration: " + ($endTime - $startTime).ToString())
+echo ""
+
