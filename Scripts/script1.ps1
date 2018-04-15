@@ -16,8 +16,6 @@ $TypeCountMap = @{
     '15' = 9
     '16' = 9
     '17' = 9
-    '20' = 5
-    '21' = 5
 }
 
 $startTime = [DateTime]::Now
@@ -28,7 +26,6 @@ foreach ($Number in $ToCheck)
     foreach ($i in 0..($TypeCountMap[$Number] - 1))
     {
         $Wildcard = "P$Number`T$i`I*"
-        $AddressWildcard += "*@P$Number`T$i`I*"
     }
 }
 
