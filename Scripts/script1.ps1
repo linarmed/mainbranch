@@ -17,7 +17,7 @@ $TypeCountMap = @{
     '16' = 9
     '17' = 9
 }
-
+echo ("Startime: " + ($startTime).ToString())
 $startTime = [DateTime]::Now
 
 foreach ($Number in $ToCheck)
