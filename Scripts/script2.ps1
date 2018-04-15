@@ -9,12 +9,15 @@ param(
     $Prefix
 )
 
+$startTime = [DateTime]::Now
+echo ("start time: " + ($startTime).ToString())
+
 $CountMap = @{
     "16" = 20000, 3500, 4000, 3000, 800, 400, 70, 12, 4
     "8"  = 166, 50, 18, 3, 1
     "4"  = 5000, 875, 1000, 750, 200, 100, 17, 3, 1
 }
-$startTime = [DateTime]::Now
+
 
 $Counts = $CountMap[$Size]
 
