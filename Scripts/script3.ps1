@@ -1,4 +1,4 @@
-﻿param(
+param(
     [Parameter(Mandatory=$true)]
     [ValidateSet('5', '6','10','11', '12', '13', '14', '15', '16', '17', '20', '21')] 
     [string]
