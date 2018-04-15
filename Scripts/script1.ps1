@@ -16,7 +16,10 @@ $TypeCountMap = @{
     '15' = 9
     '16' = 9
     '17' = 9
+    '20' = 10
+    '21' = 10
 }
+
 echo ("Startime: " + ($startTime).ToString())
 $startTime = [DateTime]::Now
 
