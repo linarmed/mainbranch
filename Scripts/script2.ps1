@@ -8,7 +8,6 @@ param(
     [string]
     $Prefix
 )
-echo ("Size: {0}" -f $Size)
 
 $CountMap = @{
     "16" = 20000, 3500, 4000, 3000, 800, 400, 70, 12, 4
